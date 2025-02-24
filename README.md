@@ -76,4 +76,8 @@ Steps to run the project:
   </li>
   <li><strong>GO To visual studio code and run consumer.py in another terminal</strong><br>
   </li>
+  <li><strong>To stop the project </strong><br>
+    1.Go to the opened zookeeper server CMD window and write "D:\kafka_2.12-3.7.0\bin\windows\zookeeper-server-stop.bat D:\kafka_2.12-3.7.0\config\zookeeper.properties"
+    2. Go to the opened kafka server CMD window and write "D:\kafka_2.12-3.7.0\bin\windows\kafka-server-stop.bat  D:\kafka_2.12-3.7.0\config\server.properties"
+  </li>
 </ol>
