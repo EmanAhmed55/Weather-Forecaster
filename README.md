@@ -1,4 +1,4 @@
-#Weather Forecaster
+# Weather Forecaster
 
 A simple project of kafka and python to demonstrate basic concepts of producer, consumer and topic
 
@@ -71,12 +71,9 @@ Steps to run the project:
       <li><strong>Create a kafka consumer in another new CMD window at the same previous path</strong><br>
     Write "kafka-console-consumer.bat --topic weather_forecasts --bootstrap-server localhost:9092 --from-beginning    D:\kafka_2.12-3.7.0\data\kafka"
     Don't close this CMD window
-  </li>
-   
+  </li>   
       <li><strong>GO To visual studio code and run producer.py</strong><br>
-
   </li>
   <li><strong>GO To visual studio code and run consumer.py in another terminal</strong><br>
-
   </li>
 </ol>
