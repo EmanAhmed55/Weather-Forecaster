@@ -1,0 +1,17 @@
+D:\kafka_2.12-3.7.0\bin\windows\zookeeper-server-start.bat D:\kafka_2.12-3.7.0\config\zookeeper.properties
+
+D:\kafka_2.12-3.7.0\bin\windows\kafka-server-start.bat D:\kafka_2.12-3.7.0\config\server.properties
+
+kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic weather_forecasts
+
+
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic weather_forecasts
+
+kafka-console-consumer.bat --topic weather_forecasts --bootstrap-server localhost:9092 --from-beginning
+D:\kafka_2.12-3.7.0\data\kafka
+
+
+D:\kafka_2.12-3.7.0\bin\windows\zookeeper-server-stop.bat D:\kafka_2.12-3.7.0\config\zookeeper.properties
+
+D:\kafka_2.12-3.7.0\bin\windows\kafka-server-stop.bat  D:\kafka_2.12-3.7.0\config\server.properties
